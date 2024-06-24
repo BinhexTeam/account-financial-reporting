@@ -241,8 +241,14 @@
         <field name="description">Plus Fixed Assets</field>
         <field name="expression">bale[('account_type', '=', 'asset_fixed')]</field>
         <field name="auto_expand_accounts">true</field>
-        <field name="auto_expand_accounts_style_id" ref="style_details_triple_indent" />
-        <field name="style_id" ref="style_double_header_indent" />
+        <field
+            name="auto_expand_accounts_style_id"
+            ref="mis_template_financial_report.style_details_double_indent"
+        />
+        <field
+            name="style_id"
+            ref="mis_template_financial_report.style_header_indent"
+        />
         <field name="type">num</field>
         <field name="compare_method">diff</field>
         <field name="accumulation_method">sum</field>
@@ -257,8 +263,14 @@
             name="expression"
         >bale[('account_type', '=', 'asset_non_current')]</field>
         <field name="auto_expand_accounts">true</field>
-        <field name="auto_expand_accounts_style_id" ref="style_details_triple_indent" />
-        <field name="style_id" ref="style_double_header_indent" />
+        <field
+            name="auto_expand_accounts_style_id"
+            ref="mis_template_financial_report.style_details_double_indent"
+        />
+        <field
+            name="style_id"
+            ref="mis_template_financial_report.style_header_indent"
+        />
         <field name="type">num</field>
         <field name="compare_method">diff</field>
         <field name="accumulation_method">sum</field>
@@ -395,7 +407,7 @@
         <field name="description">Current Year Earnings</field>
         <field name="expression">subreport_pl_us.net_profit</field>
         <field name="auto_expand_accounts">false</field>
-        <field name="style_id" ref="style_double_header_indent" />
+        <field name="style_id" ref="style_triple_header_indent" />
         <field name="type">num</field>
         <field name="compare_method">diff</field>
         <field name="accumulation_method">sum</field>
@@ -411,12 +423,9 @@
         <field name="auto_expand_accounts">true</field>
         <field
             name="auto_expand_accounts_style_id"
-            ref="mis_template_financial_report.style_details_double_indent"
+            ref="style_details_cuadruple_indent"
         />
-        <field
-            name="style_id"
-            ref="mis_template_financial_report.style_header_indent"
-        />
+        <field name="style_id" ref="style_triple_header_indent" />
         <field name="type">num</field>
         <field name="compare_method">diff</field>
         <field name="accumulation_method">sum</field>
@@ -431,10 +440,7 @@
             name="expression"
         >balance_domain+allocated_earnings-current_year_allocated_earnings</field>
         <field name="auto_expand_accounts">false</field>
-        <field
-            name="style_id"
-            ref="mis_template_financial_report.style_header_indent"
-        />
+        <field name="style_id" ref="style_double_header_indent" />
         <field name="type">num</field>
         <field name="compare_method">diff</field>
         <field name="accumulation_method">sum</field>
