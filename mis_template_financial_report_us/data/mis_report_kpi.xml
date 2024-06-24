@@ -71,7 +71,7 @@
     <record id="kpi_other_inc" model="mis.report.kpi">
         <field name="name">other_inc</field>
         <field name="description">Other Income</field>
-        <field name="expression">balp[('account_type', '=', 'income_other')][]</field>
+        <field name="expression">-balp[('account_type', '=', 'income_other')][]</field>
         <field name="auto_expand_accounts">true</field>
         <field
             name="auto_expand_accounts_style_id"
