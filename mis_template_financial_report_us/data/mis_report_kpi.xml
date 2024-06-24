@@ -438,7 +438,7 @@
         <field name="description">Previous Years Unallocated Earnings</field>
         <field
             name="expression"
-        >balance_domain+allocated_earnings-current_year_allocated_earnings</field>
+        >balance_domain+allocated_earnings-current_year_unallocated</field>
         <field name="auto_expand_accounts">false</field>
         <field name="style_id" ref="style_double_header_indent" />
         <field name="type">num</field>
