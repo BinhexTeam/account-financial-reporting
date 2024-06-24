@@ -162,7 +162,7 @@
         <field name="description">Current Assets</field>
         <field
             name="expression"
-        >bank_and_cash_accounts + receivables + current_assets_ca + prepayments + fixed_assets + non_current_assets</field>
+        >bank_and_cash_accounts + receivables + current_assets_ca + prepayments</field>
         <field name="auto_expand_accounts">false</field>
         <field
             name="style_id"
